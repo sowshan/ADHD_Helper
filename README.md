@@ -1,4 +1,4 @@
-# 🧠 ADHD AI Mind Cleanser
+#  ADHD_Helper
 
 A minimal, dark-mode assistive tool engineered to bypass executive dysfunction. Dump messy thought paths or overwhelming tasks and watch an integrated unauthenticated open AI engine slice it into clean, actionable, micro-step tick boxes.
 
