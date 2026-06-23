@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AI ADHD Mind Cleanser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="dump-phase">
+            <h1>🧠 AI Brain Assistant</h1>
+            <p class="subtitle">Dump your thoughts or list a heavy task. The AI will completely break down the steps for you to finish it easily.</p>
+            <textarea id="raw-input" placeholder="Example: I need to clean my entire messy kitchen but I have zero motivation..."></textarea>
+            <br>
+            <button id="ai-btn" class="btn-primary" onclick="getAISubsteps()">✨ Let AI Break It Down</button>
+            <div id="loading-msg" class="loader hidden">🤖 AI is thinking and crushing your task into tiny pieces...</div>
+        </div>
+
+        <div id="focus-phase" class="hidden">
+            <p class="subtitle" style="margin-bottom:5px;">Your Focus Target:</p>
+            <div id="current-task-display" class="giant-text"></div>
+            
+            <div class="steps-box">
+                <div style="font-size: 14px; color: #bb86fc; font-weight: bold; margin-bottom: 10px; text-transform: uppercase;">Micro-Steps to Success:</div>
+                <div id="substeps-container"></div>
+            </div>
+
+            <div id="action-buttons">
+                <button class="btn-success" id="done-btn" onclick="completeMainTask()" disabled>Mission Accomplished! 🏆</button>
+                <button class="btn-secondary" onclick="restartApp()">🔄 Start New Task</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
